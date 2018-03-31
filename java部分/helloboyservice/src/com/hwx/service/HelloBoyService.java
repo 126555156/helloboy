@@ -3,11 +3,12 @@ package com.hwx.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.hwx.dao.HelloBoyDao;
 import com.hwx.returnInfo.Result;
 import com.hwx.returnInfo.UserInfo;
-
+@Transactional
 @Service
 public class HelloBoyService {
 	@Autowired

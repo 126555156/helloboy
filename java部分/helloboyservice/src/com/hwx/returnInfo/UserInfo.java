@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class UserInfo {
-	private int Id;
+	private int id;
 	private String password;
 	private String username;
 	private int islogin;
@@ -12,6 +12,13 @@ public class UserInfo {
 	private String level;
 	private String phone;
 	private String nickname;
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getNickname() {
 		return nickname;
 	}
@@ -20,13 +27,6 @@ public class UserInfo {
 		this.nickname = nickname;
 	}
 
-	public int getId() {
-		return Id;
-	}
-
-	public void setId(int id) {
-		Id = id;
-	}
 
 	public int getIslogin() {
 		return islogin;
