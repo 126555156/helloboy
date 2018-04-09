@@ -6,7 +6,7 @@ import router from './router'
 import store from './vuex/store'
 import axios from 'axios'
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'http://localhost:8080/helloboyservice';
+axios.defaults.baseURL = 'http://localhost:8080/HelloBoy';
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 axios.defaults.withCredentials = true;

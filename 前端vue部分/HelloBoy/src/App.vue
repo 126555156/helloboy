@@ -28,7 +28,7 @@ export default {
     }
   },
   created() {
-    this.getSessionStorage();
+    // this.getSessionStorage();
   },
   mounted() {
     var self = this;

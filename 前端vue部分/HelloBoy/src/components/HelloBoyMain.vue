@@ -50,7 +50,7 @@
         </div>
       </Poptip>
     </div>
-    <div>
+    <div class="HelloBoyMain-content">
       <router-view></router-view>
     </div>
     <add-friends></add-friends>
@@ -96,7 +96,10 @@ AddFriends
   height: 80px;
   text-align: right;
 }
-
+.HelloBoyMain .HelloBoyMain-content{
+  width: 100%;
+  height: calc(100% - 80px);
+}
 .HelloBoyMain-logo {
   float: left;
   height: 100%;
@@ -173,4 +176,5 @@ border-radius: 10px;
   background: gold;
   color: #fff
 }
+
 </style>

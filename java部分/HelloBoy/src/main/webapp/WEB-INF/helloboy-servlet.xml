@@ -34,9 +34,11 @@
 
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 		<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
-		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/hello_boy"></property>
+	<!-- 	<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/hello_boy"></property> -->
+		<property name="jdbcUrl" value="jdbc:mysql://39.107.126.42:3306/hello_boy"></property>
 		<property name="user" value="root"></property>
-		<property name="password" value=""></property>
+<!-- 		<property name="password" value=""></property> -->
+		<property name="password" value="Hwx22331753..."></property>
 	</bean>
 	<!-- <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"> 
 		<property name="dataSource" ref="dataSource"></property> </bean> -->
