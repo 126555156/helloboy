@@ -44,9 +44,11 @@
               <Icon type="email"></Icon>
             </Badge>&nbsp&nbsp私信
           </div>
-          <div class="content-div">
-            <Icon type="gear-a"></Icon>&nbsp&nbsp设置
-          </div>
+          <router-link to="/SetUpUserInfo" exact>
+            <div class="content-div">
+              <Icon type="gear-a"></Icon>&nbsp&nbsp设置
+            </div>
+          </router-link>
         </div>
       </Poptip>
     </div>
@@ -58,7 +60,7 @@
 </template>
 <script>
 import { mapGetters, mapState } from "vuex";
-import AddFriends from "./AddFriends"
+import AddFriends from "./AddFriends";
 export default {
   data() {
     return {};
@@ -73,15 +75,15 @@ export default {
     showTabs(name) {
       this.$store.commit("UP_TABPANE_NAME", name);
     },
-    showAddFriends(){
+    showAddFriends() {
       this.$store.commit("IS_SHOW_ADDFRIENDS", true);
     }
   },
   mounted() {
     // console.log("用户信息",this.userInfo)
   },
-  components:{
-AddFriends
+  components: {
+    AddFriends
   }
 };
 </script>
@@ -96,7 +98,7 @@ AddFriends
   height: 80px;
   text-align: right;
 }
-.HelloBoyMain .HelloBoyMain-content{
+.HelloBoyMain .HelloBoyMain-content {
   width: 100%;
   height: calc(100% - 80px);
 }
@@ -165,16 +167,15 @@ AddFriends
   text-align: left;
   color: gold;
 }
-.HelloBoyMain .content-div{
+.HelloBoyMain .content-div {
   font-size: 13px;
-text-align: left;
-padding: 5px 0px 5px 100px;
+  text-align: left;
+  padding: 5px 0px 5px 100px;
   cursor: pointer;
-border-radius: 10px;
+  border-radius: 10px;
 }
-.HelloBoyMain .content-div:hover{
+.HelloBoyMain .content-div:hover {
   background: gold;
-  color: #fff
+  color: #fff;
 }
-
 </style>

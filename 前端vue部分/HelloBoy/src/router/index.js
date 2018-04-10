@@ -7,6 +7,7 @@ import ErrorPage from '@/components/ErrorPage'
 import AboutOurs from '@/components/AboutOurs'
 import ConnectionAuthor from '@/components/ConnectionAuthor'
 import PixiTest from '@/components/pixi/PixiTest'
+import SetUpUserInfo from '@/components/SetUpUserInfo'
 import 'iview/dist/styles/iview.css';
 import iView from 'iview';
 Vue.use(iView);
@@ -37,6 +38,11 @@ export default new Router({
         path: '/PixiTest',
         name: 'PixiTest',
         component: PixiTest
+      },
+      {
+        path: '/SetUpUserInfo',
+        name: 'SetUpUserInfo',
+        component: SetUpUserInfo
       }]
     },
     {

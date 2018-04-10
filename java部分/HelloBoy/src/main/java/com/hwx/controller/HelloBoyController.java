@@ -27,8 +27,6 @@ public class HelloBoyController {
 	HttpServletRequest request;
 	@Autowired
 	HttpServletResponse response;
-//	@Autowired
-//	private hhhh zzz;
 
 	@RequestMapping("/")
 	public String index(Model model) {
