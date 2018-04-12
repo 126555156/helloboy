@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+<!-- <initialization-loading></initialization-loading> -->
     <router-view/>
   </div>
 </template>
 <script>
 import axios from "axios";
 import qs from "qs";
+import InitializationLoading from "./components/InitializationLoading"
 export default {
   name: "App",
   data() {
@@ -26,6 +28,9 @@ export default {
           });
       }
     }
+  },
+  components:{
+    InitializationLoading
   },
   created() {
     this.getSessionStorage();
@@ -59,7 +64,7 @@ body {
   width: 100%;
 }
 #app {
-  min-width: 1000px;
+  /* min-width: 1000px; */
   position: absolute;
   height: 100%;
   width: 100%;

@@ -69,11 +69,13 @@
 import { mapGetters, mapState } from "vuex";
 import axios from "axios";
 import qs from "qs";
+
 export default {
   data() {
     return {
       showPassword: false,
       isRemember: false,
+
       loginForm: {
         username: "",
         password: ""
@@ -168,6 +170,7 @@ export default {
   },
   mounted() {
     // if (this.islogin == 1) this.$router.push("/");
+ 
   }
 };
 </script>
@@ -177,6 +180,8 @@ export default {
   width: 100%;
   background: url(../assets/login.jpg);
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .Login-title {
   font-size: 45px;
@@ -191,10 +196,11 @@ export default {
   width: 600px;
   height: 100%;
   float: left;
+  padding: 150px 0 0 50px;
 }
 .login-main {
   position: relative;
-  margin: 150px 0 0 50px;
+  // margin: 150px 0 0 50px;
   width: 350px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -221,6 +227,29 @@ export default {
   //   height: 150px;
   // float: left;
   color: white;
+}
+@media screen and (max-width: 700px) {
+  .Login-l {
+    width: 100%;
+    height: 20%;
+    float: left;
+  }
+  .Login-title {
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 40px;
+  }
+  .Login-r {
+    width: 100%;
+    height: 80%;
+    padding: 0 0 0 20px;
+  }
+  .login-main {
+    position: relative;
+    width: calc(100% - 20px);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
 }
 </style>
 
